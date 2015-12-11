@@ -1,0 +1,19 @@
+language: python
+sudo: false
+addons:
+    apt:
+        packages:
+        -enchant
+
+python:
+    -"2.7"
+
+# command to install dependencies
+install:
+    - 'pip install -r requirements.txt'
+
+# command to run tests
+script:
+    - 'sphinx-build -b html -d docs/_build/doctrees docs docs/_build/html'
+    - 'sphinx-build -b spelling -d doc/_build/doctrees docs _build/html'
+    - 'sphinx-build -b linkcheck -d docs/_build/doctrees docs docs/_build/html'

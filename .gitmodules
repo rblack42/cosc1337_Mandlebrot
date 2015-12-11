@@ -1,0 +1,6 @@
+[submodule "code"]
+	path = code
+	url = https://github.com/rblack42/cosc1337_Mandlebrot.code
+[submodule "docs"]
+	path = docs
+	url = https://github.com/rblack42/cosc1337_Mandlebrot.docs
